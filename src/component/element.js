@@ -22,19 +22,19 @@ function Element() {
         <div className="elements w-full justify-center sm:w-[3.5]/4">
           {elem.map((item, index) => {
             return (
-              <div
-                className="card flex items-center justify-center rounded-lg "
-                key={index}
-              >
-                <button onClick={() => updateElement(item)}>
-                  <h2
-                    className="text-center text-white font-bold text-lg"
-                    id={index}
-                  >
-                    {item.symbol}
-                  </h2>
-                </button>
-              </div>
+                <div
+                  className="card flex items-center justify-center rounded-lg "
+                  key={index}
+                >
+                  <button onClick={() => updateElement(item)}>
+                    <h2
+                      className="text-center text-white font-bold text-lg"
+                      id={index}
+                    >
+                      {item.symbol}
+                    </h2>
+                  </button>
+                </div>
             );
           })}
         </div>

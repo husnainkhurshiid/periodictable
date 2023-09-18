@@ -15,14 +15,15 @@ function Intro(props) {
     } = props.element;
 
     const shellsString = shells.join(", ");
+    const atomicMass = atomic_mass.toFixed(2);
 
     return (
       <div className="intro w-full sm:w-3/4 rounded-lg flex items-center justify-center">
         <div className="detail">
           <h2 className="text-2xl font-bold">{number}</h2>
           <h2 className="text-8xl font-bold">{symbol}</h2>
-          <h2 className="text-2xl font-bold">{atomic_mass}</h2>
-          <h2 className="text-xl">[{shellsString}]</h2>
+          <h2 className="text-2xl font-bold">{atomicMass}</h2>
+          <h2 className="text-xl hidden md:block">[{shellsString}]</h2>
         </div>
         <div className="meta hidden md:block">
           <div className="desc">
